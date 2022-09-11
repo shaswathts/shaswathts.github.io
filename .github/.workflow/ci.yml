@@ -1,3 +1,14 @@
+name: GitHub Actions
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    tags:
+      - "*"
+    branches:
+      - master
+
 title: "Shaswath Tarikere Srinivas"
 author: "Shaswath"
 description: "Embedded Software Developer"
@@ -17,7 +28,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: "Home change", icon: home}
-  - {file: "./../README.md", title: "About me", icon: address-card}
+  - {file: "README.md", title: "About me", icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:shaswathts@gmail.com"}
