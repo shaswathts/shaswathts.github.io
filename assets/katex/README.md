@@ -1,1 +1,1 @@
-#include "./../README.md"
+<embed src="../../README.md" />
