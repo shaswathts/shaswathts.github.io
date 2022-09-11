@@ -1,0 +1,43 @@
+name: GitHub Actions
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    tags:
+      - "*"
+    branches:
+      - master
+
+title: "Shaswath Tarikere Srinivas"
+author: "Shaswath"
+description: "Embedded Software Developer"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html", title: "Home change", icon: home}
+  - {file: "README.md", title: "About me", icon: address-card}
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:shaswathts@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/shaswathts/"}
+  - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/shaswath-ts-98ab74210/"}
+
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
+
+plugins:
+ - jekyll-feed
