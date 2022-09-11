@@ -12,8 +12,7 @@ The wrong way to write an algorithm is to throw some stuff on the page and then 
 
 # Steps to Devising an algorithm : 
 
-
-![[Devising an algorithm.png]]
+![Devasing an algorithm](../assets/images/Devising%20an%20algorithm.png)
 
 However, the "translate to code" comes only after you have an algorithm that you have tested by hand—giving you some confidence that your plan is solid before you build on it.
 
