@@ -26,9 +26,7 @@ My name is [**Shaswath Tarikere Srinivas**][linkedin], I am an Embedded software
 ## :man_technologist: Software languages
 
 <div align=center>
-  <a href="https://www.open-std.org/jtc1/sc22/wg14/">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg" title="C" alt="C" width="40" height="40"/>
-  </a>
+    ![c](https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg" width="40" height="40"
   <a href="https://cplusplus.com/">
     <img src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg" title="C++" alt="C++" width="40" height="40"/>
   </a>
