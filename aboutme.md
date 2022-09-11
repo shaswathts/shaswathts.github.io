@@ -3,6 +3,8 @@ layout: page
 title: "ABOUT ME"
 ---
 
+![MYINTRO](https://readme-typing-svg.herokuapp.com/?lines=Hello,+there!+👋;This+is+Shaswath...;I+am+an+Embedded+Developer;Nice+to+meet+you!&center=true&size=25)
+
 ## A little bit about myself.. 👋😄
 
 My name is [**Shaswath Tarikere Srinivas**][github], I am an Embedded software developer with a MSc. in Automotive Embedded Systems by [ESIGELEC][esigelec] & [MAHE][mahe] and experience in the mobile robotics sector (spatial representation of the ego robot) and Graphical User Interface. I am currently working for [Transvideo][transvideo] , more specifically as an [Embedded Linux Engineer](https://github.com/shaswathts/Transvideo), where I contribute to development of Kernel space and User space. Looking forward to talking to you all!
