@@ -1,63 +1,19 @@
 ---
-title:  "Advanced examples"
-mathjax: true
+title: "Algorithm"
 layout: post
-categories: media
 ---
+# What is an algorithm ?
 
-![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
+An algorithm is a clear set of steps to solve any particular problem. A _good_ algorithm can not only be translated into code, but could also be executed by a person with no particular knowledge of the problem at hand. 
 
+An important point is you must specify exactly what you want the computer to do. The computer does not "know what you mean" when you write something vague, nor can it figure out an "etc.", as an example.
 
-## MathJax
+The wrong way to write an algorithm is to throw some stuff on the page and then try to the make sense out of it later. After when it don't work, we try to tweak the steps written initially on the paper until we get something that is respectable.  
 
-You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
+# Steps to Devising an algorithm : 
 
-[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
+![Devasing an algorithm](../assets/images/Devising%20an%20algorithm.png)
 
-$$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
+However, the "translate to code" comes only after you have an algorithm that you have tested by hand—giving you some confidence that your plan is solid before you build on it.
 
-The [Euler-Lagrange](https://en.wikipedia.org/wiki/Lagrangian_mechanics) differential equation is the fundamental equation of calculus of variations.
-
-$$ \frac{\mathrm{d}}{\mathrm{d}t} \left ( \frac{\partial L}{\partial \dot{q}} \right ) = \frac{\partial L}{\partial q} $$
-
-The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) describes how the quantum state of a quantum system changes with time.
-
-$$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$
-
-## Code
-
-Embed code by putting `{{ "{% highlight language " }}%}` `{{ "{% endhighlight " }}%}` blocks around it. Adding the parameter `linenos` will show source lines besides the code.
-
-{% highlight c %}
-
-static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocator* requestAlloc)
-{
-    struct Admin* admin = Identity_check((struct Admin*) vAdmin);
-    int64_t enabled = admin->asyncEnabled;
-    Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
-    Admin_sendMessage(&d, txid, admin);
-}
-
-{% endhighlight %}
-
-## Gists
-
-With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
-
-<script src="https://gist.github.com/5555251.js?file=gist.md"></script>
-
-## Images
-
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
-
-A wrapper `div` with the class `large` can be used to increase the width of an image or iframe.
-
-![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
-
-[Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
-
-## Embedded content
-
-You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
-
-{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
+If you plan well enough and translate it correctly, your code will just work the first time. If it does not work the first time, you at least have a solid plan of what the code _should_ be doing to guide your debugging.
